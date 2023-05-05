@@ -20,7 +20,14 @@ body {
   position: relative;
   width: 684px;
   height: 264px;
-  overflow: hidden; 
+  overflow: hidden;
+
+}
+
+.card__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .card__title {

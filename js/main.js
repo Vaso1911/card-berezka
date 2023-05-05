@@ -1,5 +1,5 @@
-const div = document.querySelector('.div');
-
+const div = document.querySelector('.card__div');
+const  link = document.querySelector('.card__link')
 const svgOne = `
 <svg id="one" width="688" height="272" viewBox="0 0 688 272" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_101_8)">
@@ -38,7 +38,7 @@ const svgTwo = `
 </svg>`;
 div.innerHTML = svgOne;
 
-div.addEventListener('click', () => {
+link.addEventListener('click', () => {
   const currentSvg = div.querySelector('svg');
   
   if (currentSvg.getAttribute('id') === 'one') {
@@ -46,7 +46,6 @@ div.addEventListener('click', () => {
   } else {
     div.innerHTML = svgOne;
   }
-
 });
 
 
